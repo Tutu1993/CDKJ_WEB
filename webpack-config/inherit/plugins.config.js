@@ -1,0 +1,27 @@
+const path = require('path')
+const webpack = require('webpack')
+const dirVars = require('../base/dirVars.config.js')
+const entryArr = require('../base/entryArr.config.js')
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const pluginsConfig = [
+	new ExtractTextPlugin('[name]/styles.[contenthash:8].css'),
+]
+
+entryArr.forEach(entry => {
+	const htmlPlugin = new HtmlWebpackPlugin({
+		filename: `${entry}/index.html`,
+		template: path.resolve(dirVars.htmlDir, `${entry}/index.art`),
+		chunks: ['runtime','commons', entry],
+	})
+
+	pluginsConfig.push(htmlPlugin)
+})
+
+pluginsConfig.push(new HtmlWebpackPlugin({
+	filename: 'index.html',
+	template: path.resolve(dirVars.htmlDir, 'index/index.art'),
+	chunks: ['runtime', 'commons', 'index'],
+}))
+
+module.exports = pluginsConfig

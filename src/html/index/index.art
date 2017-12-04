@@ -1,0 +1,9 @@
+{{extend '../../resource/layout/layout.art'}}
+
+{{block 'meta'}}{{/block}}
+
+{{block 'title'}}index page{{/block}}
+
+{{block 'content'}}
+	<div id="root"></div>
+{{/block}}
