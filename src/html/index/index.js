@@ -1,4 +1,4 @@
-require('cssDir/global/normalize.css')
+require('jsDir/global.js')
 
 const log = console.log.bind(console)
 

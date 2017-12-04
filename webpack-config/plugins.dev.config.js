@@ -2,14 +2,14 @@ const webpack = require('webpack')
 const pluginsConfig = require('./inherit/plugins.config.js')
 
 pluginsConfig.push(new webpack.optimize.CommonsChunkPlugin({
-	name: 'commons',
-	filename: 'commons/vendor.js',
-	minChunks: 4,
+	name: 'vendor',
+	filename: 'vendor/vendor.js',
+	minChunks: Infinity,
 }))
 
 pluginsConfig.push(new webpack.optimize.CommonsChunkPlugin({
 	name: 'runtime',
-	filename: 'commons/runtime.js',
+	filename: 'vendor/runtime.js',
 	minChunks: Infinity,
 }))
 

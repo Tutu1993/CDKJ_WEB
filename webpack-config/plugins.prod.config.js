@@ -4,14 +4,14 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const HashOutput = require('webpack-plugin-hash-output')
 
 pluginsConfig.push(new webpack.optimize.CommonsChunkPlugin({
-	name: 'commons',
-	filename: 'commons/vendor.[chunkhash:8].js',
-	minChunks: 4,
+	name: 'vendor',
+	filename: 'vendor/vendor.[chunkhash:8].js',
+	minChunks: Infinity,
 }))
 
 pluginsConfig.push(new webpack.optimize.CommonsChunkPlugin({
 	name: 'runtime',
-	filename: 'commons/runtime.[chunkhash:8].js',
+	filename: 'vendor/runtime.[chunkhash:8].js',
 	minChunks: Infinity,
 }))
 
