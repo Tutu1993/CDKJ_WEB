@@ -9,9 +9,9 @@
 </head>
 
 <body>
-	{{include './header.art'}}
+	<!-- {{include './header.art'}} -->
 	{{block 'content'}}{{/block}}
-	{{include './footer.art'}}
+	<!-- {{include './footer.art'}} -->
 </body>
 
 </html>
