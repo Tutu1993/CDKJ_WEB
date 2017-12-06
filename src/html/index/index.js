@@ -9,8 +9,9 @@ const swiperV = new Swiper('.swiper-container-v', {
 	},
 })
 const swiperH = new Swiper('.swiper-container-h', {
-	pagination: {
-		el: '.swiper-pagination-h',
-		clickable: true,
+	loop: true,
+	navigation: {
+		prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-button-next',
 	},
 })

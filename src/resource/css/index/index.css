@@ -6,9 +6,14 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.verticalcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .swiper-container-h .h-bg-1 {
   background: url("../../imgs/index/h-bg-1.jpg") center center no-repeat;
@@ -17,6 +22,20 @@
 .swiper-container-h .h-bg-2 {
   background: url("../../imgs/index/h-bg-2.jpg") center center no-repeat;
   background-size: cover;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 17px;
+  height: 28px;
+  background-size: 17px 28px;
+}
+.swiper-container-h .swiper-button-prev {
+  left: 5.5%;
+  background-image: url("../../imgs/index/left-arrow.png");
+}
+.swiper-container-h .swiper-button-next {
+  background-image: url("../../imgs/index/right-arrow.png");
+  right: 5.5%;
 }
 .swiper-container-v .v-bg-2 {
   background: url("../../imgs/index/v-bg-2.jpg") center center no-repeat;
