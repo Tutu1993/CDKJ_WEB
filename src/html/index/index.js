@@ -1,18 +1,14 @@
-const log = console.log.bind(console)
-
-log('apple')
-
-const swiperH = new Swiper('.swiper-container-h', {
+const swiperV = new Swiper('.swiper-container-v', {
     mousewheel: true,
     direction: 'vertical',
 	pagination: {
-		el: '.swiper-pagination-h',
+		el: '.swiper-pagination-v',
 		clickable: true,
 	},
 })
-const swiperV = new Swiper('.swiper-container-v', {
+const swiperH = new Swiper('.swiper-container-h', {
 	pagination: {
-		el: '.swiper-pagination-v',
+		el: '.swiper-pagination-h',
 		clickable: true,
 	},
 })
