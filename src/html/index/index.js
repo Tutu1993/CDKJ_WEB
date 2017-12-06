@@ -1,3 +1,5 @@
+require('cssDir/index/index.css')
+
 const swiperV = new Swiper('.swiper-container-v', {
     mousewheel: true,
     direction: 'vertical',
