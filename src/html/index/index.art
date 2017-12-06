@@ -46,8 +46,8 @@
 			<div class="swiper-slide">Vertical Slide 4</div>
 			<div class="swiper-slide v-bg-5">Vertical Slide 5</div>
 			<div class="swiper-slide">Vertical Slide 6</div>
-			<div class="swiper-slide">
-				<div style="height: 50px; background-color: black;" id="bottom"></div>
+			<div class="swiper-slide" style="height: 50px;">
+				<div style="height: 50px; background-color: black;"></div>
 			</div>
 		</div>
 		<div class="swiper-pagination swiper-pagination-v"></div>
