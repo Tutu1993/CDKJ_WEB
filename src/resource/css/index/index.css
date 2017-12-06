@@ -1,6 +1,7 @@
 .swiper-container {
   width: 100%;
   height: 100%;
+  min-width: 1200px;
 }
 .swiper-slide {
   text-align: center;
@@ -15,6 +16,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.clear:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 .swiper-container-h .h-bg-1 {
   background: url("../../imgs/index/h-bg-1.jpg") center center no-repeat;
   background-size: cover;
@@ -25,17 +38,25 @@
 }
 .swiper-button-prev,
 .swiper-button-next {
-  width: 17px;
-  height: 28px;
+  width: 50px;
+  height: 200px;
+  margin-top: 0;
   background-size: 17px 28px;
+  opacity: 0.65;
+  transform: translateY(-50%);
+  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
 }
 .swiper-container-h .swiper-button-prev {
-  left: 5.5%;
+  left: 5%;
   background-image: url("../../imgs/index/left-arrow.png");
 }
 .swiper-container-h .swiper-button-next {
   background-image: url("../../imgs/index/right-arrow.png");
-  right: 5.5%;
+  right: 5%;
 }
 .swiper-container-v .v-bg-2 {
   background: url("../../imgs/index/v-bg-2.jpg") center center no-repeat;
@@ -48,4 +69,143 @@
 .swiper-container-v .v-bg-5 {
   background: url("../../imgs/index/v-bg-5.jpg") center center no-repeat;
   background-size: cover;
+}
+.h-bg-1 {
+  color: #fff;
+}
+.h-bg-1 h3 {
+  font-size: 4.8rem;
+  line-height: 52px;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+}
+.h-bg-1 h4 {
+  position: relative;
+  left: -4px;
+  font-size: 8rem;
+  line-height: 80px;
+  font-weight: normal;
+  margin: 0 0 35px 0;
+  color: #2660ad;
+}
+.h-bg-1 h4:after {
+  content: '';
+  position: absolute;
+  width: 315px;
+  border-bottom: 1px solid #2660ad;
+  left: 4px;
+  bottom: -13px;
+}
+.h-bg-1 p {
+  font-size: 1.6rem;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+.h-bg-1 .left {
+  position: relative;
+  font-size: 30rem;
+  line-height: 240px;
+  width: 160px;
+  left: -50px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.2s 0.3s;
+}
+.h-bg-1 .right {
+  position: relative;
+  text-align: left;
+}
+.h-bg-1 .h-1-border {
+  width: 800px;
+  height: 360px;
+  background-color: rgba(0,0,0,0.3);
+}
+.h-bg-1 .h-1-border span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.h-bg-1 .h-1-border span:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+}
+.h-bg-1 .h-1-border span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+.h-bg-1 .h-1-border span:nth-child(1):before {
+  border: 5px solid #2660ad;
+  border-right: none;
+  border-bottom: none;
+  top: 0;
+  left: 0;
+}
+.h-bg-1 .h-1-border span:nth-child(1):after {
+  width: 24px;
+  border-top: 5px solid #2660ad;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.h-bg-1 .h-1-border span:nth-child(2):before {
+  border: 5px solid #2660ad;
+  border-left: none;
+  border-bottom: none;
+  top: 0;
+  right: 0;
+}
+.h-bg-1 .h-1-border span:nth-child(2):after {
+  height: 24px;
+  border-right: 5px solid #2660ad;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.h-bg-1 .h-1-border span:nth-child(3):before {
+  border: 5px solid #2660ad;
+  border-top: none;
+  border-right: none;
+  bottom: 0;
+  left: 0;
+}
+.h-bg-1 .h-1-border span:nth-child(3):after {
+  width: 24px;
+  border-bottom: 5px solid #2660ad;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.h-bg-1 .h-1-border span:nth-child(4):before {
+  border: 5px solid #2660ad;
+  border-top: none;
+  border-left: none;
+  bottom: 0;
+  right: 0;
+}
+.h-bg-1 .h-1-border span:nth-child(4):after {
+  height: 24px;
+  border-left: 5px solid #2660ad;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.h-bg-1 .h-1-dashed {
+  width: 600px;
+  height: 420px;
+  box-sizing: border-box;
+  border: 1px dashed #2660ad;
+}
+.swiper-slide-active > .clear > .left {
+  left: 0;
+  opacity: 1;
+  transform: scale(1);
 }
