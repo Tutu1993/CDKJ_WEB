@@ -3,6 +3,7 @@ const moduleExports = {
 	alias: {
 		componentDir: dirVars.componentDir,
 		cssDir: dirVars.cssDir,
+		fontsDir: dirVars.fontsDir,
 		imgsDir: dirVars.imgsDir,
 		jsDir: dirVars.jsDir,
 		jsonDir: dirVars.jsonDir,

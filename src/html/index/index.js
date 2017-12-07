@@ -1,10 +1,13 @@
+require('fontsDir/iconfont.css')
 require('cssDir/index/index.css')
+require('cssDir/index/part-2.css')
 
 const log = console.log.bind(console)
 
 const navArr = ['首页', '产品介绍', '关于承点', '渠道合作', '新闻资讯', '联系我们']
 
 const swiperV = new Swiper('.swiper-container-v', {
+	initialSlide: 1,
 	direction: 'vertical', // 竖向切换
 	speed: 700, // 切换消耗时间
 	roundLengths: true, // 宽高取整

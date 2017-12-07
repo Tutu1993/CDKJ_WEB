@@ -13,7 +13,7 @@
 		<div class="global-header swiper-no-swiping">
 			<div class="gh-left"><a href="">logo</a></div>
 			<div class="gh-nav"></div>
-			<div class="gh-right">010-57106843</div>
+			<div class="gh-right"><i class="iconfont icon-dianhua"></i>010-57106843</div>
 		</div>
 		<div class="swiper-wrapper">
 			<div class="swiper-slide" data-hash="slide1">
@@ -34,8 +34,16 @@
 			<div class="swiper-slide" data-hash="slide6">
 				{{include './part-6.art'}}
 			</div>
-			<div class="swiper-slide" style="height: 50px;">
-				<div style="height: 50px; background-color: black;"></div>
+			<div class="swiper-slide" style="height: 60px;">
+				<div class="global-footer">
+					<div class="gf-link">
+						<span>友情链接：</span>
+						<a href="">承点科技</a>
+						<a href="">测微仪</a>
+						<a href="">葡萄酒</a>
+					</div>
+					<div class="gf-info">Copyright ©2015 - 2017 承点科技客户服务部 京ICP备16004818号-1</div>
+				</div>
 			</div>
 		</div>
 	</div>

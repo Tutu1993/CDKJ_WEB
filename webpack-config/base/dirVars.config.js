@@ -13,6 +13,8 @@ moduleExports.componentDir = path.resolve(moduleExports.resourceDir, './componen
 
 moduleExports.cssDir = path.resolve(moduleExports.resourceDir, './css') // css 目录
 
+moduleExports.fontsDir = path.resolve(moduleExports.resourceDir, './fonts') // css 目录
+
 moduleExports.imgsDir = path.resolve(moduleExports.resourceDir, './imgs') // imgs 目录
 
 moduleExports.jsDir = path.resolve(moduleExports.resourceDir, './js') // js 目录

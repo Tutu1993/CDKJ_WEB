@@ -4,7 +4,7 @@
 	min-width 1200px
 .swiper-slide
 	text-align center
-	font-size 18px
+	font-size 1.8rem
 	background #fff
 	transform-style preserve-3d
 	position relative
@@ -49,18 +49,19 @@
 	position absolute
 	top 0
 	right 156px
-	font-size 24px
+	font-size 2.4rem
 	color #2660ad
 	line-height 70px
-	background url('../../imgs/index/tel.png') left center no-repeat
-	padding-left 38px
+	.icon-dianhua
+		font-size 2.6rem
+		margin-right 12px
 .gh-nav
 	position absolute
 	top 50%
 	left 50%
 	transform translate(-50%, -50%)
 	.nav-list
-		font-size 18px
+		font-size 1.8rem
 		padding 23px 20px
 		line-height 24px
 		user-select none
@@ -112,6 +113,45 @@
 	span:nth-child(6).nav-list-active ~ .nav-line
 		width 72px
 		left 544px
+// 底部样式
+.global-footer
+	position relative
+	height 60px
+	background-color #666
+	color #fff
+.gf-link
+	position absolute
+	top 0
+	left 100px
+	font-size 1.6rem
+	span
+		display inline-block
+		line-height 60px
+	a
+		display inline-block
+		line-height 60px
+		color #fff
+		text-decoration none
+		position relative
+		&:hover
+			text-decoration underline
+		&:not(:last-child)
+			margin-right 20px
+			&:after
+				content ''
+				position absolute
+				width 6px
+				height 6px
+				background-color #2660ad
+				border-radius 50%
+				top 28px
+				right -16px
+.gf-info
+	position absolute
+	top 0
+	right 200px
+	font-size 1.4rem
+	line-height 60px
 // 开始部分
 .swiper-container-h .h-bg-1
 	background url('../../imgs/index/h-bg-1.jpg') center center no-repeat
@@ -335,8 +375,9 @@
 		line-height 60px
 		font-weight normal
 		margin 0 0 30px 0
-		width 512px
+		width 634px
 		color #2660ad
+		text-transform Uppercase
 		top 100px
 	p
 		font-size 2.4rem
@@ -353,7 +394,7 @@
 	padding-top 40px
 	padding-bottom 40px
 	padding-right 60px
-	padding-left calc(50% - 256px)
+	padding-left calc(50% - 317px)
 	border-top-right-radius 200px
 	border-bottom-right-radius 200px
 	background rgba(51, 51, 51, 0.6)
