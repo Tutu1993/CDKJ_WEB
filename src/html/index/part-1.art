@@ -6,6 +6,7 @@
 				<span></span>
 				<span></span>
 				<span></span>
+				<div class="h-1-dashed"></div>
 			</div>
 			<div class="verticalcenter clear">
 				<div class="left">
@@ -18,9 +19,17 @@
 					<p>基于Python、Java、Html5等程序语言实现高级架构方案</p>
 				</div>
 			</div>
-			<div class="verticalcenter h-1-dashed"></div>
 		</div>
-		<div class="swiper-slide h-bg-2">Horizontal Slide 2</div>
+		<div class="swiper-slide h-bg-2">
+			<div class="h-2-content">
+				<h3>专业高效的运营团队</h3>
+				<h4>Professional team</h4>
+				<p>业内首推赔付机制</p>
+				<p>与客户同盈利、共进退</p>
+				<p>引领代运营新风向</p>
+				<p>基于数据反馈，把控运营方向</p>
+			</div>
+		</div>
 	</div>
 	<div class="down-arrow"></div>
 	<div class="swiper-button-next"></div>

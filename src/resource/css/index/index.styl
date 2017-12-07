@@ -8,6 +8,7 @@
 	background #fff
 	transform-style preserve-3d
 	position relative
+	overflow hidden
 .verticalcenter
 	position absolute
 	top 50%
@@ -23,6 +24,94 @@
 	float left
 .right
 	float right
+// 导航栏样式
+.global-header
+	position fixed
+	top 0
+	left 0
+	width 100%
+	height 70px
+	z-index 10
+	transform-style preserve-3d
+	text-align center
+	background rgba(153, 153, 153, 0)
+	transition all .25s
+.gh-left
+	position absolute
+	top 0
+	left 100px
+	a
+		display block
+		height 70px
+		width 155px
+		background url('../../imgs/index/logo.png') left center no-repeat
+.gh-right
+	position absolute
+	top 0
+	right 156px
+	font-size 24px
+	color #2660ad
+	line-height 70px
+	background url('../../imgs/index/tel.png') left center no-repeat
+	padding-left 38px
+.gh-nav
+	position absolute
+	top 50%
+	left 50%
+	transform translate(-50%, -50%)
+	.nav-list
+		font-size 18px
+		padding 23px 20px
+		line-height 24px
+		user-select none
+		cursor pointer
+		&:hover
+			color #2660ad
+			&:nth-child(1) ~ .nav-line
+				width 36px
+				left 20px
+			&:nth-child(2) ~ .nav-line
+				width 72px
+				left 96px
+			&:nth-child(3) ~ .nav-line
+				width 72px
+				left 208px
+			&:nth-child(4) ~ .nav-line
+				width 72px
+				left 320px
+			&:nth-child(5) ~ .nav-line
+				width 72px
+				left 432px
+			&:nth-child(6) ~ .nav-line
+				width 72px
+				left 544px
+	.nav-line
+		position absolute
+		width 72px
+		left 544px
+		bottom -23px
+		border-top 3px solid #2660ad
+		transition all .35s
+	.nav-list-active
+		color #2660ad
+	span:nth-child(1).nav-list-active ~ .nav-line
+		width 36px
+		left 20px
+	span:nth-child(2).nav-list-active ~ .nav-line
+		width 72px
+		left 96px
+	span:nth-child(3).nav-list-active ~ .nav-line
+		width 72px
+		left 208px
+	span:nth-child(4).nav-list-active ~ .nav-line
+		width 72px
+		left 320px
+	span:nth-child(5).nav-list-active ~ .nav-line
+		width 72px
+		left 432px
+	span:nth-child(6).nav-list-active ~ .nav-line
+		width 72px
+		left 544px
 // 开始部分
 .swiper-container-h .h-bg-1
 	background url('../../imgs/index/h-bg-1.jpg') center center no-repeat
@@ -46,6 +135,29 @@
 .swiper-container-h	.swiper-button-next
 	background-image url('../../imgs/index/right-arrow.png')
 	right 5%
+.swiper-container-h	.down-arrow
+	position absolute
+	width 46px
+	height 46px
+	bottom 60px
+	left calc(50% - 23px)
+	z-index 2
+	background url('../../imgs/index/down-arrow.png') center center no-repeat
+	cursor pointer
+	&:before
+		content ''
+		position absolute
+		top 0
+		left 0
+		width 46px
+		height 46px
+		border-radius 50%
+		background-color rgba(255, 255, 255, 0.2)
+		transition background-color .2s cubic-bezier(.645, .045, .355, 1)
+	&:hover
+		&:before
+			background-color rgba(255, 255, 255, 0.4)
+// 背景图
 .swiper-container-v .v-bg-2
 	background url('../../imgs/index/v-bg-2.jpg') center center no-repeat
 	background-size cover
@@ -55,6 +167,7 @@
 .swiper-container-v .v-bg-5
 	background url('../../imgs/index/v-bg-5.jpg') center center no-repeat
 	background-size cover
+// 第一屏样式 - 第一部分
 .h-bg-1
 	color #fff
 	h3
@@ -80,23 +193,32 @@
 	p
 		font-size 1.6rem
 		line-height 20px
-		margin 0 0 10px 0
+		margin 0
+		&:not(:last-child)
+			margin 0 0 10px 0
 .h-bg-1 .left
 	position relative
 	font-size 30rem
 	line-height 240px
 	width 160px
-	left -50px
+	left -150px
 	opacity 0
 	transform scale(.8)
-	transition all .2s .3s
+	span
+		display block
+		margin-top -2px
 .h-bg-1 .right
 	position relative
 	text-align left
+	right -150px
+	opacity 0
+	transform scale(.8)
 .h-bg-1 .h-1-border
 	width 800px
 	height 360px
 	background-color rgba(0, 0, 0, 0.3)
+	top 150%
+	left 150%
 	span
 		display block
 		position absolute
@@ -169,11 +291,76 @@
 				left 0
 				transform translateY(-50%)
 .h-bg-1 .h-1-dashed
-	width 600px
-	height 420px
+	position absolute
+	width 0
+	height 0
+	top -30px
+	left 100px
 	box-sizing border-box
 	border 1px dashed #2660ad
 .swiper-slide-active > .clear > .left
 	left 0
 	opacity 1
 	transform scale(1)
+	transition all .2s .3s
+.swiper-slide-active > .clear > .right
+	right 0
+	opacity 1
+	transform scale(1)
+	transition all .2s .3s
+.swiper-slide-active > .h-1-border
+	top 50%
+	left 50%
+	transition all .5s .6s
+.swiper-slide-active > .h-1-border > .h-1-dashed
+	width 600px
+	height 420px
+	transition all .4s 1s
+// 第一屏样式 - 第二部分
+.h-bg-2
+	color #fff
+	text-align left
+	h3, h4, p
+		opacity 0
+		position relative
+	h3
+		font-size 5rem
+		line-height 50px
+		font-weight normal
+		margin 0 0 30px 0
+		top -120px
+	h4
+		left -4px
+		font-size 6rem
+		line-height 60px
+		font-weight normal
+		margin 0 0 30px 0
+		width 512px
+		color #2660ad
+		top 100px
+	p
+		font-size 2.4rem
+		line-height 24px
+		margin 0
+		top 150px
+		&:not(:last-child)
+			margin 0 0 18px 0
+.h-bg-2 .h-2-content
+	position absolute
+	top 50%
+	left -100%
+	transform translateY(-50%)
+	padding-top 40px
+	padding-bottom 40px
+	padding-right 60px
+	padding-left calc(50% - 256px)
+	border-top-right-radius 200px
+	border-bottom-right-radius 200px
+	background rgba(51, 51, 51, 0.6)
+.swiper-slide-active > .h-2-content
+	left 0
+	transition all .4s .4s
+	h3, h4, p
+		top 0
+		opacity 1
+		transition all .5s .9s

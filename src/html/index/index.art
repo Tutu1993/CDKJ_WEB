@@ -10,30 +10,34 @@
 
 <body>
 	<div class="swiper-container swiper-container-v">
+		<div class="global-header swiper-no-swiping">
+			<div class="gh-left"><a href="">logo</a></div>
+			<div class="gh-nav"></div>
+			<div class="gh-right">010-57106843</div>
+		</div>
 		<div class="swiper-wrapper">
-			<div class="swiper-slide">
+			<div class="swiper-slide" data-hash="slide1">
 				{{include './part-1.art'}}
 			</div>
-			<div class="swiper-slide v-bg-2">
+			<div class="swiper-slide v-bg-2" data-hash="slide2">
 				{{include './part-2.art'}}
 			</div>
-			<div class="swiper-slide v-bg-3">
+			<div class="swiper-slide v-bg-3" data-hash="slide3">
 				{{include './part-3.art'}}
 			</div>
-			<div class="swiper-slide">
+			<div class="swiper-slide" data-hash="slide4">
 				{{include './part-4.art'}}
 			</div>
-			<div class="swiper-slide v-bg-5">
+			<div class="swiper-slide v-bg-5" data-hash="slide5">
 				{{include './part-5.art'}}
 			</div>
-			<div class="swiper-slide">
+			<div class="swiper-slide" data-hash="slide6">
 				{{include './part-6.art'}}
 			</div>
 			<div class="swiper-slide" style="height: 50px;">
 				<div style="height: 50px; background-color: black;"></div>
 			</div>
 		</div>
-		<div class="swiper-pagination swiper-pagination-v"></div>
 	</div>
 </body>
 
