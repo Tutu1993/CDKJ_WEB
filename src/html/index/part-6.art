@@ -1,1 +1,46 @@
-6
+<div class="v-bg-6-1">
+    <div class="v-bg-6-1-1"></div>
+    <div class="vertical v-bg-6-1-2">
+        <div>
+            <h3>联系我们</h3>
+            <h4>Contact us</h4>
+        </div>
+        <div>
+            <p>地址：北京市通州区中山大街59号院<span>北京ONE写字楼2110</span></p>
+            <p>邮箱：info@chengdiankeji.com</p>
+            <p>电话：010-57106843</p>
+        </div>
+        <div>
+            <div>
+                <img src="../../resource/imgs/index/6-1.jpg">
+                <p>官方微信</p>
+            </div>
+            <div>
+                <img src="../../resource/imgs/index/6-2.jpg">
+                <p>官方微博</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="map" style="width:80%;height:100%;float:right;z-index:-3;"></div>
+<script src="http://api.map.baidu.com/api?v=1.2" type="text/javascript"></script>
+<script type="text/javascript">
+    function initialize() {
+        //创建地图实例
+        var map = new BMap.Map('map');
+        //创建一个坐标
+        var point =new BMap.Point(116.662645,39.913248);
+        //地图初始化，设置中心点坐标和地图级别
+        map.centerAndZoom(point,15);
+        var marker = new BMap.Marker(point); 　　　　　 // 创建标注
+        map.addOverlay(marker);      // 将标注添加到地图中
+        /*var infoWindow = new BMap.InfoWindow("北京承点科技有限公司"); // 创建信息窗口对象
+        map.openInfoWindow(infoWindow,point);     //开启信息窗口*/
+    }
+    window.onload = initialize;
+
+</script>
+
+
+
+
