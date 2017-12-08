@@ -1,0 +1,129 @@
+.v-6-box {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+  z-index: 3;
+  color: #fff;
+  text-align: left;
+}
+.v-6-box:before {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 150px;
+  width: 130px;
+  border-top: 2px solid rgba(38,96,173,0);
+}
+.v-6-box h3,
+.v-6-box h4,
+.v-6-box p {
+  position: relative;
+  color: rgba(255,255,255,0);
+}
+.v-6-box h3 {
+  font-size: 3.2rem;
+  line-height: 34px;
+  font-weight: normal;
+  margin: 0 0 23px 0;
+  padding-top: 70px;
+  top: 40px;
+}
+.v-6-box h4 {
+  font-size: 2.4rem;
+  line-height: 26px;
+  font-weight: normal;
+  margin: 0 0 165px 0;
+  top: 36px;
+}
+.v-6-box p {
+  font-size: 2.2rem;
+  line-height: 24px;
+  margin: 0 0 90px 0;
+  top: 34px;
+}
+.v-6-box p span {
+  display: inline-block;
+  position: relative;
+  left: 66px;
+}
+.v-6-box:hover:before {
+  width: 65px;
+}
+.v-6-logo {
+  font-size: 0;
+  position: relative;
+  top: 60px;
+  opacity: 0;
+}
+.v-6-logo span {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  padding-top: 135px;
+  font-size: 2.6rem;
+  line-height: 30px;
+  text-align: center;
+}
+.v-6-logo span:first-child {
+  background: url("../../imgs/index/6-1.jpg") top center no-repeat;
+  margin-right: 100px;
+}
+.v-6-logo span:last-child {
+  background: url("../../imgs/index/6-2.jpg") top center no-repeat;
+}
+.v-6-shadow {
+  position: absolute;
+  width: 485px;
+  height: 100%;
+  left: -485px;
+  bottom: 0;
+  background-color: #333;
+  z-index: 2;
+  transition: all 0.26s ease 0.3s;
+  transition-duration: 1.2s;
+}
+.v-6-shadow:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -375px;
+  width: 0;
+  height: 0;
+  border-top: 1080px solid #333;
+  border-right: 375px solid transparent;
+}
+.swiper-slide-active .v-6-box:before {
+  border-top: 2px solid #2660ad;
+  top: 114px;
+  transition: all 0.26s ease 0.7s;
+  transition-duration: 1.2s;
+}
+.swiper-slide-active .v-6-box h3,
+.swiper-slide-active .v-6-box h4,
+.swiper-slide-active .v-6-box p {
+  top: 0;
+  color: #fff;
+}
+.swiper-slide-active .v-6-box h3 {
+  transition: all 0.26s ease 0.6s;
+  transition-duration: 1.2s;
+}
+.swiper-slide-active .v-6-box h4 {
+  transition: all 0.26s ease 0.8s;
+  transition-duration: 1.2s;
+}
+.swiper-slide-active .v-6-box p {
+  transition: all 0.26s ease 1s;
+  transition-duration: 1.2s;
+}
+.swiper-slide-active .v-6-shadow {
+  left: 0;
+}
+.swiper-slide-active .v-6-logo {
+  transition: all 0.26s ease 1.2s;
+  transition-duration: 1.2s;
+  top: 0;
+  opacity: 1;
+}

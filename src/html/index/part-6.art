@@ -1,26 +1,14 @@
-<div class="v-bg-6-1">
-    <div class="v-bg-6-1-1"></div>
-    <div class="vertical v-bg-6-1-2">
-        <div>
-            <h3>联系我们</h3>
-            <h4>Contact us</h4>
-        </div>
-        <div>
-            <p>地址：北京市通州区中山大街59号院<span>北京ONE写字楼2110</span></p>
-            <p>邮箱：info@chengdiankeji.com</p>
-            <p>电话：010-57106843</p>
-        </div>
-        <div>
-            <div>
-                <img src="../../resource/imgs/index/6-1.jpg">
-                <p>官方微信</p>
-            </div>
-            <div>
-                <img src="../../resource/imgs/index/6-2.jpg">
-                <p>官方微博</p>
-            </div>
-        </div>
-    </div>
+<div class="v-6-box">
+    <h3>联系我们</h3>
+    <h4>Contact us</h4>
+    <p>地址：北京市通州区中山大街59号院<br><span>北京ONE写字楼2110</span></p>
+    <p>邮箱：info@chengdiankeji.com</p>
+    <p>电话：010-57106843</p>
+	<div class="v-6-logo">
+		<span>官方微信</span>
+		<span>官方微博</span>
+	</div>
 </div>
-<div id="map" style="width:80%;height:100%;float:right;z-index:-3;"></div>
+<div class="v-6-shadow"></div>
+<div id="map" style="width:100%;height:100%;float:right;z-index:-3;"></div>
 <script src="http://api.map.baidu.com/api?v=1.2" type="text/javascript"></script>

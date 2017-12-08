@@ -1,8 +1,9 @@
 require('fontsDir/iconfont.css')
 require('cssDir/index/index.css')
-require('cssDir/index/index-1.css')
 require('cssDir/index/part-2.css')
+require('cssDir/index/part-3.css')
 require('cssDir/index/part-4.css')
+require('cssDir/index/part-6.css')
 
 const log = console.log.bind(console)
 
@@ -85,8 +86,8 @@ nextPage.addEventListener('click', () => {
 })
 
 const map = new BMap.Map('map');
-const point =new BMap.Point(116.662645,39.913248)
+const point =new BMap.Point(116.662645, 39.913248)
 const marker = new BMap.Marker(point)
 
-map.centerAndZoom(point,15)
+map.centerAndZoom(point, 20)
 map.addOverlay(marker)
