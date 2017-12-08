@@ -1,5 +1,6 @@
 require('fontsDir/iconfont.css')
 require('cssDir/index/index.css')
+require('cssDir/index/index-1.css')
 require('cssDir/index/part-2.css')
 require('cssDir/index/part-4.css')
 
@@ -8,9 +9,9 @@ const log = console.log.bind(console)
 const navArr = ['首页', '产品介绍', '关于承点', '渠道合作', '新闻资讯', '联系我们']
 
 const swiperV = new Swiper('.swiper-container-v', {
-	initialSlide: 3,
+	initialSlide: 5,
 	direction: 'vertical', // 竖向切换
-	speed: 700, // 切换消耗时间
+	speed: 500, // 切换消耗时间
 	roundLengths: true, // 宽高取整
 	slidesPerView: 'auto', // 同屏显示 slide 的数量
 	// followFinger: false, // 释放时 slide 才会切换
@@ -46,13 +47,25 @@ const swiperV = new Swiper('.swiper-container-v', {
 				header.style.background = 'rgba(153, 153, 153, .3)'
 				nav.style.transform = 'translate(-50%, -50%) scale(.95)'
 			}
+
+			if (this.activeIndex === 5) {
+				const addressIcon = document.querySelector('.BMap_noprint')
+				if (addressIcon !== null) {
+					addressIcon.className = 'iconStyle'
+				}
+				const hiddenIcon = document.querySelector('.BMap_Marker')
+				if (hiddenIcon !== null) {
+					hiddenIcon.className = 'iconHidden'
+					hiddenIcon.style.display = 'none'
+				}
+			}
 		},
 	},
 })
 
 const swiperH = new Swiper('.swiper-container-h', {
 	loop: true, // 开启循环
-	speed: 700, // 切换消耗时间
+	speed: 500, // 切换消耗时间
 	touchAngle: 15, // 允许触发拖动的角度值
 	threshold: 20, // 至少拖动的距离 px
 	// followFinger: false, // 释放时 slide 才会切换
@@ -70,3 +83,10 @@ const nextPage = document.querySelector('.down-arrow')
 nextPage.addEventListener('click', () => {
 	swiperV.slideNext()
 })
+
+const map = new BMap.Map('map');
+const point =new BMap.Point(116.662645,39.913248)
+const marker = new BMap.Marker(point)
+
+map.centerAndZoom(point,15)
+map.addOverlay(marker)

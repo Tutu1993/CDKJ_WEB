@@ -117,7 +117,7 @@
 .global-footer
 	position relative
 	height 60px
-	background-color #666
+	background-color #333
 	color #fff
 .gf-link
 	position absolute
@@ -408,3 +408,24 @@
 		top 0
 		opacity 1
 		transition all .5s .9s
+// 重置地图
+.iconStyle
+	background-color #1394ff!important
+	width 12px!important
+	height 12px!important
+	border 2px solid #177afa
+	box-sizing border-box
+	border-radius 50%
+	&:after
+		content ''
+		display block
+		position absolute
+		width 150px
+		height 150px
+		top -68px
+		left -68px
+		border-radius 50%
+		box-sizing border-box
+		z-index -1
+		border 1px solid rgba(22, 122, 250, 0.4)
+		background-color rgba(19, 148, 255, 0.1)

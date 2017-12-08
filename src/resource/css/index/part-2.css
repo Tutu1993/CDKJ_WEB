@@ -64,7 +64,6 @@
   position: relative;
   width: 205px;
   height: 245px;
-  overflow: hidden;
 }
 .v-2-list:before {
   content: '';
