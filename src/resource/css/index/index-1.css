@@ -1,0 +1,224 @@
+.v-bg-3 {
+  display: flex;
+  flex-direction: column;
+}
+.v-bg-3-1 {
+  background-color: #c8c8c8;
+  height: 240px;
+  width: 1200px;
+  position: relative;
+  margin: 75px auto 0;
+}
+.v-bg-3-1 div:nth-child(1) {
+  width: 257px;
+  height: 334px;
+  position: absolute;
+  top: -20%;
+  left: 10%;
+  background: url("../../imgs/index/3-1.png") center center no-repeat;
+  background-size: cover;
+}
+.v-bg-3-1 div:nth-child(2) {
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 38%;
+  width: 555px;
+}
+.v-bg-3-1 div:nth-child(2) h3 {
+  font-size: 2.6rem;
+  border-bottom: 1px solid #a2a2a2;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+.v-bg-3-1 div:nth-child(2) p {
+  font-size: 2rem;
+  margin: 0;
+  width: 100%;
+  color: #333;
+  font-weight: 100;
+  line-height: 2.5rem;
+}
+.v-bg-3-2 {
+  margin: 90px auto 0;
+  text-align: left;
+  width: 955px;
+  padding-left: 20px;
+}
+.v-bg-3-2 h3 {
+  color: #2660ad;
+  font-weight: normal;
+  width: 105px;
+  padding-bottom: 15px;
+  font-size: 2.6rem;
+  margin: 0 0 45px;
+  border-bottom: 1px solid #2660ad;
+}
+.v-bg-3-2 p {
+  text-indent: 40px;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 100;
+  margin: 0;
+}
+.v-bg-3-3 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 880px;
+  margin-top: 100px;
+}
+.v-bg-3-3 div h4 {
+  font-size: 3.6rem;
+  font-weight: normal;
+  position: relative;
+  margin: 0 0 15px 0;
+  color: #333;
+}
+.v-bg-3-3 div h4 span {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 7px;
+  color: #333;
+  right: -15px;
+}
+.v-bg-3-3 div span {
+  font-size: 1.6rem;
+  color: #333;
+}
+.v-bg-3-3 .v-bg-3-3-h4 h4 {
+  color: #2660ad;
+}
+.v-bg-3-3 .v-bg-3-3-h4 span {
+  color: #333;
+}
+.v-bg-5-1 h3 {
+  font-size: 4rem;
+  color: #666;
+  font-weight: normal;
+}
+.v-bg-5-1 h3:after,
+.v-bg-5-1 h3:before {
+  content: "";
+  width: 68px;
+  border: 2px solid #666;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+}
+.v-bg-5-1 h3:after {
+  left: calc(100% + 20px);
+}
+.v-bg-5-1 h3:before {
+  left: calc(0% - 88px);
+}
+.v-bg-5-2 div {
+  height: 550px;
+  width: 400px;
+}
+.vertical {
+  position: absolute;
+  top: calc(50% + 35px);
+  transform: translateY(-50%);
+}
+.v-bg-6-1 {
+  z-index: 1;
+  color: #fff;
+  text-align: left;
+  padding-left: 100px;
+}
+.v-bg-6-1-1 {
+  width: 430px;
+  height: 100%;
+  border-top: 1200px solid #333;
+  border-right: 350px solid transparent;
+  position: absolute;
+  left: -430px;
+  z-index: 5;
+  transition: left 1s;
+}
+.swiper-slide-active .v-bg-6-1-1 {
+  z-index: 1;
+  left: 0;
+}
+.v-bg-6-1-2 {
+  width: 400px;
+  z-index: 5;
+  height: 785px;
+}
+.v-bg-6-1-2 >div {
+  width: 100%;
+}
+.v-bg-6-1-2 >div:last-child {
+  margin-top: 135px;
+  height: 160px;
+}
+.v-bg-6-1-2 >div:last-child div {
+  display: inline-block;
+  text-align: center;
+  margin-right: 70px;
+}
+.v-bg-6-1-2 >div:last-child div p {
+  font-size: 2.6rem;
+}
+.v-bg-6-1-2 h3,
+.v-bg-6-1-2 h4,
+.v-bg-6-1-2 p {
+  transition: all 1s;
+  opacity: 0;
+}
+.v-bg-6-1-2 h3,
+.v-bg-6-1-2 h4 {
+  transition: all 0.5s 0.1s;
+}
+.v-bg-6-1-2 h3 {
+  font-size: 3.2rem;
+  margin: 0;
+  padding-bottom: 0;
+  font-weight: 500;
+  position: relative;
+}
+.v-bg-6-1-2 h3:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 127px;
+  height: 1;
+  border-bottom: 2px solid #2660ad;
+  transition: all 1s;
+}
+.v-bg-6-1-2 h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+.v-bg-6-1-2 p {
+  margin: 0;
+  font-size: 2.2rem;
+}
+.v-bg-6-1-2 p span {
+  display: block;
+  margin-top: 10px;
+  text-indent: 66px;
+}
+.v-bg-6-1-2:hover div h3:after {
+  width: 50px;
+}
+.swiper-slide-active .v-bg-6-1-2 h3,
+.swiper-slide-active .v-bg-6-1-2 h4,
+.swiper-slide-active .v-bg-6-1-2 p {
+  opacity: 1;
+}
+.swiper-slide-active .v-bg-6-1-2 h3 {
+  padding-bottom: 10px;
+}
+.swiper-slide-active .v-bg-6-1-2 h4 {
+  margin-top: 10px;
+  margin-bottom: 135px;
+}
+.swiper-slide-active .v-bg-6-1-2 p {
+  margin-bottom: 85px;
+}
