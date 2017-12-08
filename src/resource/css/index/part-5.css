@@ -1,0 +1,120 @@
+.v-bg-5-1:hover .v-bg-5-1-1 h3:after,
+.v-bg-5-1:hover .v-bg-5-1-1 h3:before {
+  width: 20px;
+  transition: all 0.6s ease;
+}
+.v-bg-5-1:hover .v-bg-5-1-1 h3:after {
+  left: calc(100% + 15px);
+}
+.v-bg-5-1:hover .v-bg-5-1-1 h3:before {
+  left: calc(0% - 40px);
+}
+.v-bg-5-1 .v-bg-5-1-1 h3 {
+  font-size: 4rem;
+  color: #666;
+  margin: 40px auto;
+  width: 200px;
+  font-weight: normal;
+  position: relative;
+}
+.v-bg-5-1 .v-bg-5-1-1 h3:after,
+.v-bg-5-1 .v-bg-5-1-1 h3:before {
+  content: "";
+  width: 68px;
+  border: 2px solid #666;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+}
+.v-bg-5-1 .v-bg-5-1-1 h3:after {
+  left: calc(100% + 20px);
+}
+.v-bg-5-1 .v-bg-5-1-1 h3:before {
+  left: calc(0% - 88px);
+}
+.v-bg-5-1 .v-bg-5-1-2 {
+  display: flex;
+  margin-bottom: 150px;
+  overflow: hidden;
+  height: 570px;
+}
+.v-bg-5-1 .v-bg-5-1-2 div {
+  height: 550px;
+  width: 400px;
+  margin: 10px 80px 10px 10px;
+  box-shadow: 1px 1px 15px #d3d3d3;
+  text-align: left;
+  background-color: #fff;
+  position: relative;
+  top: 570px;
+}
+.v-bg-5-1 .v-bg-5-1-2 div:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 320px;
+  background: rgba(255,255,255,0.2);
+}
+.v-bg-5-1 .v-bg-5-1-2 div:hover:after {
+  background: rgba(255,255,255,0);
+}
+.v-bg-5-1 .v-bg-5-1-2 div h4 {
+  font-size: 2.8rem;
+  color: #2660ad;
+  font-weight: normal;
+  margin: 40px 30px 13px;
+}
+.v-bg-5-1 .v-bg-5-1-2 div p {
+  color: #333;
+  font-size: 1.8rem;
+  margin: 0 30px;
+}
+.v-bg-5-1 .v-bg-5-1-2 div a {
+  display: block;
+  width: 160px;
+  height: 40px;
+  border: 1px solid #666;
+  color: #666;
+  margin: 40px 0 0 30px;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+}
+.v-bg-5-1 .v-bg-5-1-2 div a:hover {
+  border: 1px solid #2660ad;
+  color: #2660ad;
+}
+.v-bg-5-1 .v-bg-5-1-2 div:first-child {
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+}
+.v-bg-5-1 .v-bg-5-1-2 div:nth-child(2) {
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+}
+.v-bg-5-1 .v-bg-5-1-2 div:last-child {
+  margin-right: 10px;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s;
+}
+.v-bg-5-1 .v-bg-5-1-3 a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #666;
+  color: #666;
+  text-decoration: none;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+.v-bg-5-1 .v-bg-5-1-3 a:hover {
+  border: 1px solid #2660ad;
+  color: #2660ad;
+}
+.swiper-slide-active .v-bg-5-1-2 div {
+  top: 0;
+}
+.icon-changjiantou:before {
+  font-size: 5rem;
+  line-height: 42px;
+}

@@ -8,23 +8,23 @@
                 <img src="../../resource/imgs/index/5-1.jpg">
                 <h4>承点新闻</h4>
                 <p>即时了解承点 掌握最新动态</p>
-                <a href="#">了解更多</a>
+                <a href="">了解更多</a>
             </div>
             <div>
                 <img src="../../resource/imgs/index/5-2.jpg">
                 <h4>行业资讯</h4>
                 <p>把握第一手资料 引领行业风向</p>
-                <a href="#">了解更多</a>
+                <a href="">了解更多</a>
             </div>
             <div>
                 <img src="../../resource/imgs/index/5-3.jpg">
                 <h4>干货分享</h4>
                 <p>不虚此行 干货满满的业内精选</p>
-                <a href="#">了解更多</a>
+                <a href="">了解更多</a>
             </div>
         </div>
         <div class="v-bg-5-1-3">
-            <a href="#"><i class="iconfont icon-changjiantou"></i></a>
+            <a href=""><i class="iconfont icon-changjiantou"></i></a>
         </div>
         <div class="v-bg-5-1-3"></div>
     </div>
