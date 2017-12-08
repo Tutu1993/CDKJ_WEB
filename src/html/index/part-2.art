@@ -2,29 +2,25 @@
 	<h3>What Can We Do For You</h3>
 	<h4>我们能为你做些什么</h4>
 	<div class="v-2-box">
-		<div>
-			<div class="v-2-icon">
-				<i class="iconfont icon-yingxiaoguanli"></i>
-			</div>
+		<div class="v-2-list">
+			<i class="iconfont icon-yingxiaoguanli"></i>
 			<h5>品牌营销</h5>
+			<p>整合全网资源，打造立体营销，帮助企业品牌，产品等通过互联网进行整合营销。</p>
 		</div>
-		<div>
-			<div class="v-2-icon">
-				<i class="iconfont icon-13kaifaguanli"></i>
-			</div>
-			<h5>品牌营销</h5>
+		<div class="v-2-list">
+			<i class="iconfont icon-13kaifaguanli"></i>
+			<h5>开发定制</h5>
+			<p>主营APP研发与微信开发。多种作模式根据需求，享受免费定制化开发微信或APP产品服务。</p>
 		</div>
-		<div>
-			<div class="v-2-icon">
-				<i class="iconfont icon-yunying"></i>
-			</div>
-			<h5>品牌营销</h5>
+		<div class="v-2-list">
+			<i class="iconfont icon-yunying"></i>
+			<h5>运营服务</h5>
+			<p>针对产品类型，结合新媒体方向，从商业模式角度出发，实现企业共赢。</p>
 		</div>
-		<div>
-			<div class="v-2-icon">
-				<i class="iconfont icon-anquan1"></i>
-			</div>
-			<h5>品牌营销</h5>
+		<div class="v-2-list">
+			<i class="iconfont icon-anquan1"></i>
+			<h5>安全服务</h5>
+			<p>通过识别安全问题帮助企业了解当前安全状况,制定渗透测试报告，增加信息安全程度。</p>
 		</div>
 	</div>
 	<span>One-stop Network Service</span>
