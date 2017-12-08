@@ -25,7 +25,7 @@
 			<div class="swiper-slide v-bg-3" data-hash="slide3">
 				{{include './part-3.art'}}
 			</div>
-			<div class="swiper-slide" data-hash="slide4">
+			<div class="swiper-slide v-bg-4" data-hash="slide4">
 				{{include './part-4.art'}}
 			</div>
 			<div class="swiper-slide v-bg-5" data-hash="slide5">

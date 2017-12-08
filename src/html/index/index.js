@@ -1,13 +1,14 @@
 require('fontsDir/iconfont.css')
 require('cssDir/index/index.css')
 require('cssDir/index/part-2.css')
+require('cssDir/index/part-4.css')
 
 const log = console.log.bind(console)
 
 const navArr = ['首页', '产品介绍', '关于承点', '渠道合作', '新闻资讯', '联系我们']
 
 const swiperV = new Swiper('.swiper-container-v', {
-	initialSlide: 1,
+	initialSlide: 3,
 	direction: 'vertical', // 竖向切换
 	speed: 700, // 切换消耗时间
 	roundLengths: true, // 宽高取整
@@ -55,9 +56,9 @@ const swiperH = new Swiper('.swiper-container-h', {
 	touchAngle: 15, // 允许触发拖动的角度值
 	threshold: 20, // 至少拖动的距离 px
 	// followFinger: false, // 释放时 slide 才会切换
-	// autoplay: {
-	// 	delay: 3000,
-	// },
+	autoplay: {
+		delay: 3000,
+	},
 	navigation: {
 		prevEl: '.swiper-button-prev',
 		nextEl: '.swiper-button-next',
